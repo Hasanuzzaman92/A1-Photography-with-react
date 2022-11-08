@@ -21,7 +21,7 @@ const Header = () => {
             <ul className="flex items-center hidden space-x-8 lg:flex">
               <li>
                 <Link
-                  href="/home"
+                  to="/home"
                   aria-label="Home"
                   title="Home"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -47,6 +47,16 @@ const Header = () => {
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Reviews
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  aria-label="Blog"
+                  title="Blog"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Blog
                 </Link>
               </li>
              
@@ -178,6 +188,16 @@ const Header = () => {
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Reviews
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/blog"
+                            aria-label="Blog"
+                            title="Blog"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Blog
                           </Link>
                         </li>
                        
