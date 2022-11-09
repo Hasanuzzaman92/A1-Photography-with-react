@@ -3,6 +3,7 @@ import Blog from "../pages/Blog/Blog";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
+import Services from "../pages/Services/Services";
 import Signup from "../pages/Signup/Signup";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home></Home>
+            },
+            {
+                path: '/services',
+                loader: () => fetch('http://localhost:5000/services'),
+                element: <Services></Services>
             },
             {
                 path: '/blog',

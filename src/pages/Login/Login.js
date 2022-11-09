@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     return (
         <div className="w-full mx-auto my-16 bg-yellow-100 max-w-md p-8 space-y-3 rounded-xl dark:dark:bg-gray-900 dark:dark:text-gray-100">
-	<h1 className="text-2xl font-bold text-center">Login</h1>
+	<h1 className="text-3xl font-bold text-center">Login</h1>
 	<form novalidate="" action="" className="space-y-6 ng-untouched ng-pristine ng-valid">
 		<div className="space-y-1 text-sm">
 			<label for="username" className="block dark:dark:text-gray-400">Email:</label>
