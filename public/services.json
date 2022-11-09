@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Wedding Photography",
+    "rating": 4.5,
+    "price": 70,
+    "desc": "Wedding photographers capture memories for brides and grooms, creating a photographic narrative of wedding ceremonies. They take action shots of pre-ceremony preparations, the marriage ceremony, and the reception. They also take posed shots of the bride, groom, wedding party, and family members.",
+    "img": "https://content.jdmagicbox.com/comp/etawah/c7/9999p5688.5688.180304104522.c3c7/catalogue/naina-photo-studio-saifai-etawah-photo-studios-p0309.jpg",
+    "userName": "Murad Hasan",
+    "userPhoto": "https://lh3.googleusercontent.com/a-/ACNPEu-vKievqN7Ce5rEu9N6UkMAxhfrHWLPNGOzUQggoA=w60-h60-p-rp-mo-br100",
+    "review": "Great service"
+  },
+  {
+    "name": "Birthday Photography",
+    "rating": 4.5,
+    "price": 50,
+    "desc": "Get the best moments in your birthday to be catured by the professionals photographer so that you can enjoy your special day with your family and friend. A party photoshoot on your birthday brings you an ideal option to capture a plethora of images that depict your personality in the most meaningful way. ",
+    "img": "https://www.photoportray.com/wp-content/uploads/2018/11/candid-birthday-1.jpeg",
+    "userName": "Himel Hasan",
+    "userPhoto": "https://lh3.googleusercontent.com/a-/ACNPEu-vKievqN7Ce5rEu9N6UkMAxhfrHWLPNGOzUQggoA=w60-h60-p-rp-mo-br100",
+    "review": "Nice service"
+  },
+  {
+    "name": "Modeling Photography",
+    "rating": 4.5,
+    "price": 60,
+    "desc": "A model photography shoot can also refer to a common practice where a photographer is taking photographs of a model for the model's portfolio. This usually means that a model pays a photographer to take his or her head and body shots, or by which an agency organizes the model photography shoot on behalf of the model.",
+    "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d3699a63977617.5ac34a76b4cce.jpg",
+    "userName": "Sagor Khan",
+    "userPhoto": "https://lh3.googleusercontent.com/a-/ACNPEu-vKievqN7Ce5rEu9N6UkMAxhfrHWLPNGOzUQggoA=w60-h60-p-rp-mo-br100",
+    "review": "Good job"
+  },
+  {
+    "name": "Opennig Photography",
+    "rating": 4.5,
+    "price": 60,
+    "desc": "What do you say at a grand opening event? If you are hosting an in-person grand opening event, introduce yourself and your brand, tell your brand story, and thank your guests for their support. This is a great way to build trust and brand affinity with your potential customers. ",
+    "img": "https://www.focuseventphotography.com/wp-content/uploads/2019/12/henderson-grand-opening-photography.jpg",
+    "userName": "Ashik Ali",
+    "userPhoto": "https://lh3.googleusercontent.com/a-/ACNPEu-vKievqN7Ce5rEu9N6UkMAxhfrHWLPNGOzUQggoA=w60-h60-p-rp-mo-br100",
+    "review": "Awesome service"
+  },
+  {
+    "name": "Party Photography",
+    "rating": 4.5,
+    "price": 60,
+    "desc": "Event photography is the professional art of snapping high-quality images during a wide variety of important occasions, from personal events like weddings or birthday parties to large public gatherings like corporate events, galas, award ceremonies, and music festivals. If you are hosting an in-person grand opening event, introduce yourself and your brand, tell your brand story, and thank your guests for their support. This is a great way to build trust and brand affinity with your potential customers. ",
+    "img": "https://www.adorama.com/alc/wp-content/uploads/2016/12/holiday-party-photograph-fun-feature.jpg",
+    "userName": "Shohel Rana",
+    "userPhoto": "https://lh3.googleusercontent.com/a-/ACNPEu-vKievqN7Ce5rEu9N6UkMAxhfrHWLPNGOzUQggoA=w60-h60-p-rp-mo-br100",
+    "review": "I am very happy to get your best service"
+  },
+  {
+    "name": "Picnic Photography",
+    "rating": 4.5,
+    "price": 60,
+    "desc": "Event photography is the professional art of snapping high-quality images during a wide variety of important occasions, from personal events like weddings or birthday parties to large public gatherings like corporate events, galas, award ceremonies, and music festivals. If you are hosting an in-person grand opening event, introduce yourself and your brand, tell your brand story, and thank your guests for their support. This is a great way to build trust and brand affinity with your potential customers. ",
+    "img": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/81625-istock-946512878-988208e0ad067a4385bb4772896c02c3.jpg",
+    "userName": "Aman Hasan",
+    "userPhoto": "https://lh3.googleusercontent.com/a-/ACNPEu-vKievqN7Ce5rEu9N6UkMAxhfrHWLPNGOzUQggoA=w60-h60-p-rp-mo-br100",
+    "review": "Great service"
+  }
+]
