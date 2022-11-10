@@ -23,7 +23,9 @@ const Signup = () => {
         .then(result => {
             const user = result.user;
             console.log(user)
+            form.reset();
             toast.success('sign up successfully')
+
         })
         .catch(error => toast.error(error.message))
     }
@@ -46,8 +48,6 @@ const Signup = () => {
       <h1 className="text-3xl font-bold text-center ">Sign Up</h1>
       <form
 	  onSubmit={handleSignUp}
-        novalidate=""
-        action=""
         className="space-y-6 ng-untouched ng-pristine ng-valid"
       >
         <div className="space-y-1 text-sm">

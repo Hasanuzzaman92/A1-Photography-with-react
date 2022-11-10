@@ -1,28 +1,64 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { GoogleAuthProvider } from "firebase/auth";
+import React, { useContext } from "react";
+import toast from "react-hot-toast";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
 const Login = () => {
+    const {logIn, setLoading, providerLogin} = useContext(AuthContext)
+    const navigate = useNavigate();
+    const location = useLocation();
 
-	const handleLogin = () =>{
+    const from = location.state?.from?.pathname || '/';
 
-	}
+    const handleLogin = event => {
+      event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password= form.password.value;
+        console.log(email, password)
+
+        logIn(email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          form.reset()
+          toast.success('logIn successfull')
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          toast.error(errorMessage)
+        });
+            
+            
+    }
+
+    const googleProvider = new GoogleAuthProvider();
+
+    const handleGoogleSignIn = () => {
+      providerLogin(googleProvider)
+          .then(result => {
+              const user = result.user;
+              console.log(user);
+              navigate(from, {replace: true});
+              toast.success('Google log in success')
+          })
+          .catch(error => console.error(error))
+  }
 
 	
   return (
     <div className="w-full mx-auto my-16 bg-yellow-100 max-w-md p-8 space-y-3 rounded-xl dark:dark:bg-gray-900 dark:dark:text-gray-100">
-      <h1 className="text-3xl font-bold text-center">Login</h1>
+      <h1 className="text-3xl font-bold text-center ">Log In</h1>
       <form
-	  	onClick={handleLogin}
-        novalidate=""
-        action=""
+	  onSubmit={handleLogin}
         className="space-y-6 ng-untouched ng-pristine ng-valid"
       >
         <div className="space-y-1 text-sm">
-          <label for="username" className="block dark:dark:text-gray-400">
+          <label for="email" className="block dark:dark:text-gray-400">
             Email:
           </label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             placeholder="Email"
@@ -43,7 +79,7 @@ const Login = () => {
           <div className="flex justify-end text-xs dark:dark:text-gray-400"></div>
         </div>
         <button className="block w-full bg-yellow-400 font-bold p-3 text-center rounded-sm">
-          Log in
+          Log In
         </button>
       </form>
       <div className="flex items-center pt-4 space-x-1">
@@ -54,7 +90,7 @@ const Login = () => {
         <div className="flex-1 h-px sm:w-16 dark:dark:bg-gray-700"></div>
       </div>
       <div className="flex justify-center space-x-4">
-        <button aria-label="Log in with Google" className="p-3 rounded-sm">
+        <button onClick={handleGoogleSignIn} aria-label="Log in with Google" className="p-3 rounded-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
@@ -82,14 +118,15 @@ const Login = () => {
           </svg>
         </button>
       </div>
+
       <p className="text-sm text-center sm:px-6 dark:dark:text-gray-400">
-        Don't have an account?{" "}
+        Already have an account?{" "}
         <Link
           rel="noopener noreferrer"
-          to="/signup"
+          to="/login"
           className="underline dark:dark:text-gray-100"
         >
-          Sign up
+          Log in
         </Link>
       </p>
     </div>
