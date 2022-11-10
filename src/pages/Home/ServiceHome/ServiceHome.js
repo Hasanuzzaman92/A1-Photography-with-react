@@ -4,7 +4,6 @@ import SingelServiceHome from "./SingelServiceHome";
 
 const ServiceHome = () => {
   const [service, setService] = useState([]);
-  const { name, img, price, rating, desc } = service;
   useEffect(() => {
     fetch("services.json")
       .then((res) => res.json())

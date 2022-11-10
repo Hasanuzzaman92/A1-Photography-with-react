@@ -3,11 +3,14 @@ import React, { useContext } from "react";
 import toast from "react-hot-toast";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const Login = () => {
     const {logIn, setLoading, providerLogin} = useContext(AuthContext)
     const navigate = useNavigate();
     const location = useLocation();
+
+    useTitle("Log in")
 
     const from = location.state?.from?.pathname || '/';
 
@@ -21,8 +24,12 @@ const Login = () => {
         logIn(email, password)
         .then((userCredential) => {
           const user = userCredential.user;
+          console.log(user)
           form.reset()
+
           toast.success('logIn successfull')
+          navigate(from, {replace: true});
+          setLoading(false)
         })
         .catch((error) => {
           const errorMessage = error.message;

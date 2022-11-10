@@ -4,11 +4,13 @@ import { Link, useLoaderData } from "react-router-dom";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const ServiceDetails = () => {
   const { user } = useContext(AuthContext);
   const service = useLoaderData();
-  console.log(service);
+
+  useTitle('Service details')
 
   const { name, img, price, desc, rating, userName, userPhoto, review } =
     service;
